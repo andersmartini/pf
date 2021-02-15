@@ -6,13 +6,15 @@ uses grep to match a regex of your service name, and automatically picks a pod w
 
 ## Installing
 
-copy the pf.sh script to /usr/local/bin/pf
+Clone this repo, and in its root catalogue, run:
+`$ sudo cp ./pf.sh /usr/local/bin/pf`
 
 
 ## Running
 
 `$ pf myService 8080:8080`
 
+hint: you dont have to type out the entire service name, just enough to make it unique from other services. PF uses grep under the hood so anything that will match the wanted service but not the others is fine.
 
 
 ## Future Features
